@@ -4,7 +4,7 @@ cat ./ref_sequences/mcrAgene_*.fasta >> mcrAgene_all.fasta
 ~/Private/hmmer-3.2.1/bin/hmmbuild mcrAbuild_out mcrAgene_aligned.fasta
 
 # collating all hsp70 genes into one file, alignment of the sequences and building an hmm profile
-cat hsp70gene_*.fasta >> hsp70_all.fasta
+cat ./ref_sequences/hsp70gene_*.fasta >> hsp70_all.fasta
 ~/Private/muscle -in hsp70_all.fasta -out hsp70alignment.fasta
 ~/Private/hmmer-3.2.1/bin/hmmbuild hsp70build_out hsp70alignment.fasta
 
