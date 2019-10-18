@@ -19,4 +19,4 @@ echo "$a $b $c" >> search_summary.csv
 done
 
 #text file with the names of the candidate pH-resistant methanogens
-cat search_summary.csv | grep -v " 0 " | cut -d " " -f 1 > candidates.txt
+cat search_summary.csv | grep -v " 0 " | grep -v " 0" >> candidates.txt
